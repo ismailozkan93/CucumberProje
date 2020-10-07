@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="30.05">
+<testcase classname="Koala Palace" name="TC28_kullanici hotelroomedit sayfasinda properties bolumundeki veriyi siler" time="28.382">
+<system-out><![CDATA[Given kullanici koalapalace admin sayfasina gider...........................passed
+And kullanici kullaniciadi ve sifresini girer...............................passed
+Then kullanici giris islemini gerceklestirir................................passed
+Given kullanici hotelroomedit "http://www.kaolapalace-qa-environment2.com/admin/HotelRoomAdmin/Edit?Id=13" sayfasina gider.passed
+And kullanici hotelroomedit sayfasinda properties bolumune tiklar...........passed
+And kullanici hotelroomedit sayfasinda tip olarak "room prop1" secer........passed
+And kullanici hotelroomedit sayfasinda code olarak "4444" girer.............passed
+And kullanici hotelroomedit sayfasinda value olarak "sistem bozuldu" girer..passed
+And kullanici hotelroomedit sayfasinda save butonuna tiklar.................passed
+Then kullanici hotelroomedit sayfasinda properties bolumunde yeni kayit oldugunu assert eder.passed
+]]></system-out>
+</testcase>
+</testsuite>

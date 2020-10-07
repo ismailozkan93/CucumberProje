@@ -1,0 +1,216 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "TC09_Koala Palace Admin Giris",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13455000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici koalapalace admin sayfasina gider",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 463000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici kullaniciadi ve sifresini girer",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7669000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici giris islemini gerceklestirir",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-04T11:49:32.506Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 310,
+        "name": "TC28_kullanici hotelroomedit sayfasinda properties bolumundeki veriyi siler",
+        "description": "",
+        "id": "koala-palace;tc28-kullanici-hotelroomedit-sayfasinda-properties-bolumundeki-veriyi-siler",
+        "after": [
+          {
+            "result": {
+              "duration": 424000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1984000000,
+              "status": "passed"
+            },
+            "line": 311,
+            "name": "kullanici hotelroomedit \"http://www.kaolapalace-qa-environment2.com/admin/HotelRoomAdmin/Edit?Id\u003d13\" sayfasina gider",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://www.kaolapalace-qa-environment2.com/admin/HotelRoomAdmin/Edit?Id\u003d13\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasina_gider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 228000000,
+              "status": "passed"
+            },
+            "line": 312,
+            "name": "kullanici hotelroomedit sayfasinda properties bolumune tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_properties_bolumune_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 265000000,
+              "status": "passed"
+            },
+            "line": 313,
+            "name": "kullanici hotelroomedit sayfasinda tip olarak \"room prop1\" secer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"room prop1\"",
+                  "offset": 46
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_tip_olarak_secer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 314,
+            "name": "kullanici hotelroomedit sayfasinda code olarak \"4444\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4444\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_code_olarak_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168000000,
+              "status": "passed"
+            },
+            "line": 315,
+            "name": "kullanici hotelroomedit sayfasinda value olarak \"sistem bozuldu\" girer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sistem bozuldu\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_value_olarak_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 208000000,
+              "status": "passed"
+            },
+            "line": 316,
+            "name": "kullanici hotelroomedit sayfasinda save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3100000000,
+              "status": "passed"
+            },
+            "line": 317,
+            "name": "kullanici hotelroomedit sayfasinda properties bolumunde yeni kayit oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_properties_bolumunde_yeni_kayit_oldugunu_assert_eder()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@koalapalace"
+          },
+          {
+            "name": "@hotelroomedit"
+          }
+        ]
+      }
+    ],
+    "name": "Koala Palace",
+    "description": "",
+    "id": "koala-palace",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/koalapalace.feature",
+    "tags": [
+      {
+        "name": "@koalapalace",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
