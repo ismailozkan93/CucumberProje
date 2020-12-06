@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features="src/test/resources/features", //features klasörünün adresini
         glue = "stepdefinitions", // testlerinin içerisinde olduğu paketin ismi
         tags = "@hotelreservationcreate",//sectiginiz tag'a ait testler calistirilir.
-        dryRun = true
+        dryRun = false
 
         //dryRun=true olursa eksik olan methodlari bulur ve size öneride bulunur.
         //dryRun=false olursa testi calistirir.

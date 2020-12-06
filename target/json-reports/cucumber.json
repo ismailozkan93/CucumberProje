@@ -3,208 +3,83 @@
     "line": 2,
     "elements": [
       {
+        "start_timestamp": "2020-11-02T20:43:36.382Z",
         "line": 3,
-        "name": "TC09_Koala Palace Admin Giris",
+        "name": "kullanici hotel tablosundaki verileri okur",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 13455000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "kullanici koalapalace admin sayfasina gider",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 463000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "kullanici kullaniciadi ve sifresini girer",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7669000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "kullanici giris islemini gerceklestirir",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-04T11:49:32.506Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 310,
-        "name": "TC28_kullanici hotelroomedit sayfasinda properties bolumundeki veriyi siler",
-        "description": "",
-        "id": "koala-palace;tc28-kullanici-hotelroomedit-sayfasinda-properties-bolumundeki-veriyi-siler",
-        "after": [
-          {
-            "result": {
-              "duration": 424000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "veri-okuma;kullanici-hotel-tablosundaki-verileri-okur",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1984000000,
+              "duration": 2993000000,
               "status": "passed"
             },
-            "line": 311,
-            "name": "kullanici hotelroomedit \"http://www.kaolapalace-qa-environment2.com/admin/HotelRoomAdmin/Edit?Id\u003d13\" sayfasina gider",
+            "line": 4,
+            "name": "kullanici veritabanina baglanir",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"http://www.kaolapalace-qa-environment2.com/admin/HotelRoomAdmin/Edit?Id\u003d13\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasina_gider(java.lang.String)"
+              "location": "database_stepdefinitions.DbReadStepDef.kullanici_veritabanina_baglanir()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 228000000,
+              "duration": 316000000,
               "status": "passed"
             },
-            "line": 312,
-            "name": "kullanici hotelroomedit sayfasinda properties bolumune tiklar",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_properties_bolumune_tiklar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 265000000,
-              "status": "passed"
-            },
-            "line": 313,
-            "name": "kullanici hotelroomedit sayfasinda tip olarak \"room prop1\" secer",
+            "line": 5,
+            "name": "kullanici \"tHOTEL\" tablosundaki \"Email\" verilerini alir",
             "match": {
               "arguments": [
                 {
-                  "val": "\"room prop1\"",
-                  "offset": 46
+                  "val": "\"tHOTEL\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Email\"",
+                  "offset": 32
                 }
               ],
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_tip_olarak_secer(java.lang.String)"
+              "location": "database_stepdefinitions.DbReadStepDef.kullanici_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 180000000,
-              "status": "passed"
+              "error_message": "com.microsoft.sqlserver.jdbc.SQLServerException: The column name Name is not valid.\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:234)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerResultSet.findColumn(SQLServerResultSet.java:698)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerResultSet.getObject(SQLServerResultSet.java:2460)\r\n\tat database_stepdefinitions.DbReadStepDef.kullanici_sutunundaki_verileri_okur(DbReadStepDef.java:37)\r\n\tat ✽.kullanici \"Name\" sutunundaki verileri okur(file:///C:/Users/Ismail/IdeaProjects/CucumberProje/src/test/resources/features/dbokuma.feature:6)\r\n",
+              "duration": 205000000,
+              "status": "failed"
             },
-            "line": 314,
-            "name": "kullanici hotelroomedit sayfasinda code olarak \"4444\" girer",
+            "line": 6,
+            "name": "kullanici \"Name\" sutunundaki verileri okur",
             "match": {
               "arguments": [
                 {
-                  "val": "\"4444\"",
-                  "offset": 47
+                  "val": "\"Name\"",
+                  "offset": 10
                 }
               ],
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_code_olarak_girer(java.lang.String)"
+              "location": "database_stepdefinitions.DbReadStepDef.kullanici_sutunundaki_verileri_okur(java.lang.String)"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 168000000,
-              "status": "passed"
-            },
-            "line": 315,
-            "name": "kullanici hotelroomedit sayfasinda value olarak \"sistem bozuldu\" girer",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sistem bozuldu\"",
-                  "offset": 48
-                }
-              ],
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_value_olarak_girer(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 208000000,
-              "status": "passed"
-            },
-            "line": 316,
-            "name": "kullanici hotelroomedit sayfasinda save butonuna tiklar",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_save_butonuna_tiklar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3100000000,
-              "status": "passed"
-            },
-            "line": 317,
-            "name": "kullanici hotelroomedit sayfasinda properties bolumunde yeni kayit oldugunu assert eder",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_properties_bolumunde_yeni_kayit_oldugunu_assert_eder()"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@koalapalace"
-          },
-          {
-            "name": "@hotelroomedit"
+            "name": "@dbokuma"
           }
         ]
       }
     ],
-    "name": "Koala Palace",
+    "name": "Veri Okuma",
     "description": "",
-    "id": "koala-palace",
+    "id": "veri-okuma",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/koalapalace.feature",
+    "uri": "file:src/test/resources/features/dbokuma.feature",
     "tags": [
       {
-        "name": "@koalapalace",
+        "name": "@dbokuma",
         "type": "Tag",
         "location": {
           "line": 1,
