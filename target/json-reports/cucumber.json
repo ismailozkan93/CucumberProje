@@ -3,83 +3,272 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-02T20:43:36.382Z",
-        "line": 3,
-        "name": "kullanici hotel tablosundaki verileri okur",
+        "start_timestamp": "2020-12-07T18:45:00.369Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "TC08_kullanici walmartta aramakutusu kullanarak arama yapar",
         "description": "",
-        "id": "veri-okuma;kullanici-hotel-tablosundaki-verileri-okur",
+        "id": "walmartta-urun-arama;tc08-kullanici-walmartta-aramakutusu-kullanarak-arama-yapar;test-verileri;2",
+        "after": [
+          {
+            "result": {
+              "duration": 582000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2993000000,
+              "duration": 23211000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "kullanici veritabanina baglanir",
+            "name": "kullanici \"https://walmart.com\" sayfasina gider.",
             "match": {
-              "location": "database_stepdefinitions.DbReadStepDef.kullanici_veritabanina_baglanir()"
+              "arguments": [
+                {
+                  "val": "\"https://walmart.com\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 316000000,
+              "duration": 15838000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "kullanici \"tHOTEL\" tablosundaki \"Email\" verilerini alir",
+            "name": "kullanici  walmart aramakutusuna \"watch\" yazar ve arar",
             "match": {
               "arguments": [
                 {
-                  "val": "\"tHOTEL\"",
-                  "offset": 10
-                },
-                {
-                  "val": "\"Email\"",
-                  "offset": 32
+                  "val": "\"watch\"",
+                  "offset": 33
                 }
               ],
-              "location": "database_stepdefinitions.DbReadStepDef.kullanici_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramakutusuna_yazar_ve_arar(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "com.microsoft.sqlserver.jdbc.SQLServerException: The column name Name is not valid.\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:234)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerResultSet.findColumn(SQLServerResultSet.java:698)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerResultSet.getObject(SQLServerResultSet.java:2460)\r\n\tat database_stepdefinitions.DbReadStepDef.kullanici_sutunundaki_verileri_okur(DbReadStepDef.java:37)\r\n\tat ✽.kullanici \"Name\" sutunundaki verileri okur(file:///C:/Users/Ismail/IdeaProjects/CucumberProje/src/test/resources/features/dbokuma.feature:6)\r\n",
-              "duration": 205000000,
-              "status": "failed"
+              "duration": 50000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "kullanici \"Name\" sutunundaki verileri okur",
+            "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Name\"",
-                  "offset": 10
-                }
-              ],
-              "location": "database_stepdefinitions.DbReadStepDef.kullanici_sutunundaki_verileri_okur(java.lang.String)"
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@dbokuma"
+            "name": "@walmart"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-07T18:45:40.307Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "TC08_kullanici walmartta aramakutusu kullanarak arama yapar",
+        "description": "",
+        "id": "walmartta-urun-arama;tc08-kullanici-walmartta-aramakutusu-kullanarak-arama-yapar;test-verileri;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1005000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6567000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici \"https://walmart.com\" sayfasina gider.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://walmart.com\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10709000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici  walmart aramakutusuna \"calculator\" yazar ve arar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"calculator\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramakutusuna_yazar_ve_arar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 311000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
+            "match": {
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@walmart"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-07T18:45:58.933Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "TC08_kullanici walmartta aramakutusu kullanarak arama yapar",
+        "description": "",
+        "id": "walmartta-urun-arama;tc08-kullanici-walmartta-aramakutusu-kullanarak-arama-yapar;test-verileri;4",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d87.0.4280.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-02L31QB\u0027, ip: \u0027192.168.0.135\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\\Users\\admin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50604}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 9ee2f35ee56c4f1aec35bbe51bc8aa6b\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\r\n\tat utilities.Driver.getDriver(Driver.java:53)\r\n\tat stepdefinitions.Hooks.tearDown(Hooks.java:25)\r\n",
+              "duration": 44000000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9111000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "kullanici \"https://walmart.com\" sayfasina gider.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://walmart.com\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2945000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "kullanici  walmart aramakutusuna \"flower\" yazar ve arar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"flower\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_aramakutusuna_yazar_ve_arar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using class name\u003dresult-summary-container\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-02L31QB\u0027, ip: \u0027192.168.0.135\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)\r\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:389)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.getText(Unknown Source)\r\n\tat stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir(WalmartStepDefinitions.java:27)\r\n\tat ✽.kullanici walmart sonuc sayisini ekrana yazdirir(file:///C:/Users/admin/IdeaProjects/CucumberProje/src/test/resources/features/walmart.feature:6)\r\n",
+              "duration": 120000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "kullanici walmart sonuc sayisini ekrana yazdirir",
+            "match": {
+              "location": "stepdefinitions.WalmartStepDefinitions.kullanici_walmart_sonuc_sayisini_ekrana_yazdirir()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@walmart"
           }
         ]
       }
     ],
-    "name": "Veri Okuma",
+    "name": "Walmartta Urun Arama",
     "description": "",
-    "id": "veri-okuma",
+    "id": "walmartta-urun-arama",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/dbokuma.feature",
+    "uri": "file:src/test/resources/features/walmart.feature",
     "tags": [
       {
-        "name": "@dbokuma",
+        "name": "@walmart",
         "type": "Tag",
         "location": {
           "line": 1,

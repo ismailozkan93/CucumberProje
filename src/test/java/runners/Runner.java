@@ -9,9 +9,9 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/default-cucumber-reports",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},//rapor olusturmak icin
-        features="src/test/resources/features", //features klasörünün adresini
+        features="src/test/resources/features/walmart.feature", //features klasörünün adresini
         glue = "stepdefinitions", // testlerinin içerisinde olduğu paketin ismi
-        tags = "@hotelreservationcreate",//sectiginiz tag'a ait testler calistirilir.
+        tags = "@walmart",//sectiginiz tag'a ait testler calistirilir.
         dryRun = false
 
         //dryRun=true olursa eksik olan methodlari bulur ve size öneride bulunur.
