@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 import java.util.List;
-
+/*
 public class Gmibankpage {
     public Gmibankpage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -168,4 +168,4 @@ public class Gmibankpage {
 
 }
 
-
+*/

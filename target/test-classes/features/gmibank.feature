@@ -1,4 +1,4 @@
-Scenario Outline: TC001 Verify that with same and current password generates error message
+ Scenario Outline: TC001 Verify that with same and current password generates error message
 When user navigates to "Sign in" page under account menu icon
 And user types and submit the valid "<user>" credentials
 Then newpassword
@@ -99,7 +99,6 @@ Feature: Password rules
    | sdkjsjsnvnskmn |
    | 01233456       |
 
- /* (IPTAL)*/
  Scenario:US_008 TC009 Verify with different different Password from current password,is accepted
   And user types a "Current password" and press TAB
   And user types a "New password" and press TAB
@@ -168,4 +167,6 @@ Feature: Password rules
   When user navigates to "User Info" page under account menu icon
   And user types a valid "Firstname" pres TAB and valid "Lastname"pres TAB valid email pres TAB
   And user verify that 2 languages options
+
+
 

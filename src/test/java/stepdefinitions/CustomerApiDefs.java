@@ -17,7 +17,7 @@ jA3NjMxNzg3fQ.mAeCpNwMxDLVxzJbqMOu-BYZULeDG9Q0ZNYfWkytM9a5Px2EU_3zWVMrKV7-ciy4jg
 <version>4.3.0</version>
 </dependency>
 */
-
+/*
 public class CustomerApiDefs {
 
     Response response=given()
@@ -48,3 +48,4 @@ response.prettyPrint();
             .response();
 response.prettyPrint();
 }
+*/
