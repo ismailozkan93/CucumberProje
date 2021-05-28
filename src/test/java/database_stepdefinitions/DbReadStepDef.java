@@ -4,7 +4,7 @@ import java.sql.*;
 public class DbReadStepDef {
                     //sqlserver farkli bir veritabanina baglanilcaksa degisir(örn:oracle)
                                   //ip adresi                                   //Kullanici adi ve sifresi
-    String url = "jdbc:sqlserver://184.168.194.58:1433;databaseName=kaolapalacedb;user=Ahmet_User;password=Ahmet123!";
+                    String url = "jdbc:sqlserver://184.168.194.58:1433;databaseName=kaolapalacedb;user=Ahmet_User;password=Ahmet123!";
     String username = "Ahmet_User";
     String password = "Ahmet123!";
     Connection connection; // Veritabanına bağlanmak için kullanacağız.(Java.sqlden olusturulur)
@@ -27,12 +27,13 @@ public class DbReadStepDef {
     public void kullanici_sutunundaki_verileri_okur(String string) throws SQLException {
         // resultsetin içindeki ilk satırı atlıyoruz.
         // bir sonraki veriye atlıyor.
-        resultSet.next();
+        resultSet.next();//resultSet.first() ikisi de birinci satira götürür.
         System.out.println(resultSet.getRow()+".satirdayiz...");
 
         /*Object birinciVeri = resultSet.getObject(string);
         System.out.println(birinciVeri.toString());
         resultSet.next();           //Birinci ve ikinci satirdaki veriyi okur.
+        resultSet.absolute(20) //20nci satira götürür.
 */
         Object ikinciVeri = resultSet.getObject(string);
         System.out.println(ikinciVeri.toString());

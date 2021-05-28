@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
         glue = "database_stepdefinitions",
-        tags = "@dbokuma",
-        dryRun = false
+        tags = "@dbupdate",
+        dryRun = true
 )
 public class DbRunner {
 }

@@ -4,3 +4,10 @@ Feature: Veri Okuma
     Given kullanici veritabanina baglanir
     And kullanici "tHOTEL" tablosundaki "Email" verilerini alir
     And kullanici "Email" sutunundaki verileri okur
+
+  @dbokuma1
+  Feature: Veri Okuma
+  Scenario: kullanici hotel tablosundaki verileri okur
+    Given kullanici veritabanina baglanir
+    And kullanici "tHOTELROOMRESERVATION" tablosundaki "DateStart" verilerini alir
+    And kullanici "DateStart" sutunundaki verileri okur
